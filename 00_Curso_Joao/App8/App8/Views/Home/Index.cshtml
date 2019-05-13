@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<h1>Página Inicial</h1>
+<p>Valor: @ViewData["valor"]</p>
+@*<p>Valor: @ViewBag.valor</p>*@
+
+@*Passar o valor para 200  *@
+
+@{ ViewData["valor"] = 200; }
+<p>Valor: @ViewData["valor"]</p>
+
+@* Carregar Partial View *@
+@Html.Partial("_parte1")
+
+@* Regrassa a view principal aqui *@
+<p>Valor: @ViewData["valor"]</p>
