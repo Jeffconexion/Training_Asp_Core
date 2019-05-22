@@ -1,0 +1,13 @@
+﻿@model App10.Model.Dados
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Página Inicial</h1>
+
+<p>Nome: @Model.humano.Nome</p>
+<p>Carro: @Model.automovel.TipoCarro</p>
+
+<hr />
+
+<partial name="_parcial1"/>
