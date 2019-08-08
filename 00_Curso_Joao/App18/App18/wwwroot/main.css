@@ -9,6 +9,28 @@
     color: white;
 }
 
+/*Navegação*/
+.navegacao {
+    background-color: cadetblue;
+}
+
+.navegacao a {
+        padding: 0px 20px;
+        text-decoration: none;
+        color: rgb(200,200,200);
+}
+
+.navegacao a:hover {
+        text-decoration: none;
+        color: white;
+}
+
+/*Conteudo*/
+.conteudo {
+    background-color: white;
+    color: black;
+}
+
 /*rodape*/
 .rodape {
     background-color: rgb(10, 68, 147);
@@ -16,13 +38,13 @@
 }
 
 .sociais a {
-   font-size: 1.5em;
-   padding: 0px 20px;
-   text-decoration: none;
-   color: rgb(200,200,200);
+    font-size: 1.5em;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: rgb(200,200,200);
 }
 
-.sociais a:hover {
-    text-decoration: none;
-    color: white;
-}
+    .sociais a:hover {
+        text-decoration: none;
+        color: white;
+    }
