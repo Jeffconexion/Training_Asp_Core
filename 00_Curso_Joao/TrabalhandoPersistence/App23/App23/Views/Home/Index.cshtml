@@ -1,0 +1,34 @@
+﻿@model  IEnumerable<App23.Models.Cliente>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <h1>Clientes</h1>
+    <hr />
+    <a asp-action="novoCliente">Adicionar Cliente</a>
+    <hr />
+
+    @if(Model.Count() != 0)
+    {
+        @foreach (var item in Model)
+        {
+            <p>Nome: @item.nome | Telefone: @item.telefone</p>
+        }
+        <p>Clientes: @Model.Count()</p>
+    }
+    else
+    {
+        <p>Não existe cliente registrado!!</p>
+    }
+
+</body>
+</html>
