@@ -1,0 +1,21 @@
+﻿@model  List<App22.Models.Cliente>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @foreach(var cliente in Model)
+    {
+    <p>@cliente.Matricula @cliente.Nome @cliente.Cargo - @Html.ActionLink("Detalhes","Detalhes",new {matricula = cliente.Matricula })</p>
+    }
+
+</body>
+</html>
